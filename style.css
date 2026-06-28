@@ -19,24 +19,30 @@ header {
   align-items: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #222;
+  color: white;
+}
+
 nav a {
   color: white;
+  margin: 0 15px;
   text-decoration: none;
-  margin: 0 10px;
 }
-
-nav a:hover {
-  color: yellow;
-}
-
-/* HERO */
 .hero {
-  background: linear-gradient(135deg, blue, skyblue);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   color: white;
   text-align: center;
-  padding: 60px;
 }
-
 /* ABOUT */
 .about, .services {
   text-align: center;
@@ -52,11 +58,11 @@ nav a:hover {
   width: 150px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
-/* FOOTER */
-footer {
+button {
+  padding: 10px 25px;
+  border: none;
   background: black;
   color: white;
-  text-align: center;
-  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
